@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main><h1>National Parks Search</h1>
+    <div class="searchContainer">
+      <form id="search">
+        <label for="searchBar">Enter state name or keyword:</label> 
+        <input type="text" name="searchBar" id="searchBar" value="California" required>
+        <br><label for="hitsNum">Number of Responses Desired:</label>
+        <input type="number" name="hitsNum" id="hitsNum" value="10"><input type="submit" class="button">
+      </form>
+    </div>
+    <div class="results"></div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
