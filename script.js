@@ -26,7 +26,7 @@ function findParks(state, number) {
 function listParks(responseJson) {
   $('.results').empty()
   for (let i=0; i < responseJson.data.length; i++) {
-    $('.results').append(`<h2>${responseJson.data[i].fullName}</h2><p>${responseJson.data[i].description}</p><br><a href="${responseJson.data[i].url}">${responseJson.data[i].url}</a><br><p>Address:<br>${responseJson.data[i].addresses[0].line1}<br>${responseJson.data[i].addresses[0].line2}<br>${responseJson.data[i].addresses[0].city},  ${responseJson.data[i].addresses[0].stateCode}  ${responseJson.data[i].addresses[0].postalCode}</p><hr>`)
+    $('.results').append(`<h2>${responseJson.data[i].fullName}</h2><p>${responseJson.data[i].description}</p><br><a href="${responseJson.data[i].url}" target="_blank">${responseJson.data[i].url}</a><br><p>Address:<br>${responseJson.data[i].addresses[0].line1}<br>${responseJson.data[i].addresses[0].line2}<br>${responseJson.data[i].addresses[0].city},  ${responseJson.data[i].addresses[0].stateCode}  ${responseJson.data[i].addresses[0].postalCode}</p><hr>`)
   }
 }
 
