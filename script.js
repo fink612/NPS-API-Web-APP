@@ -1,3 +1,5 @@
+'use strict';
+
 const baseURL = 'https://developer.nps.gov/api/v1/parks'
 const key = '7Xe68z83KFWNqeuWeOk0QmDibeS8ucC8eSUU3huS'
 
